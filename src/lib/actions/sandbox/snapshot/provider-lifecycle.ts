@@ -94,6 +94,7 @@ function requireRuntimeReceipt(
   return receipt;
 }
 
+/** Require a restore receipt that matches the prepared target, profile, and acceleration rules. */
 function requireRestoreReceipt(
   bundle: RuntimeProviderBundle,
   surface: SupportedSnapshotSurface,
@@ -287,6 +288,7 @@ export function prepareSandboxRuntimeRestore(
   });
 }
 
+/** Re-normalize prepared restore authority, preserving the acceleration-enable decision. */
 function normalizePreparedRestore(
   bundle: RuntimeProviderBundle,
   target: SandboxEntry,

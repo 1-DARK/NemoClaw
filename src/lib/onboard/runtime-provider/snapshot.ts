@@ -727,6 +727,7 @@ export function canRestoreAcceleration(
   return canRepresent(source, target);
 }
 
+/** Validate a restore request against live provider state, including acceleration compatibility. */
 function validateRestoreRequest(
   providerId: string,
   driver: RuntimeProviderSnapshotDriver,
